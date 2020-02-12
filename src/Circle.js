@@ -12,6 +12,6 @@ const Circle =(props)=> {
         <img className={photoClass} src={picture}/>
         </div>
       )
-}
+};
     
 export default Circle;
