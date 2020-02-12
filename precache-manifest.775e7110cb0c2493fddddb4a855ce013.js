@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd6f09dca1ef487096fb718d7e7f8b34",
+    "revision": "dc6323f18a06ae9a67de61f59fd055a2",
     "url": "/doGame/index.html"
   },
   {
-    "revision": "2c2fac8d3eb443582893",
+    "revision": "6b6fc7c65b497b90cdeb",
     "url": "/doGame/static/css/main.58e59ba5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/doGame/static/js/2.3ccefaab.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2c2fac8d3eb443582893",
-    "url": "/doGame/static/js/main.4031d061.chunk.js"
+    "revision": "6b6fc7c65b497b90cdeb",
+    "url": "/doGame/static/js/main.ae28af66.chunk.js"
   },
   {
     "revision": "14f121c23e187f475e7f",
