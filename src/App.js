@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Circle from './Circle';
 import sound from './dog.mp3'
+import {setRandomIndexAC} from "./reducer";
+import {connect} from "react-redux";
 
 class App extends React.Component {
     constructor() {
@@ -9,27 +11,20 @@ class App extends React.Component {
         this.audioRef = React.createRef();
     };
 
-    state = {
-        showPict: true,
-        count: 0,
-        dogSound: false,
-        randomIndex: 3
-    };
-
     componentDidMount() {
         setInterval(this.setRandomIndex, 1000)
     };
 
     setRandomIndex = () => {
-        this.setState({
-            randomIndex: Math.floor(Math.random() * 9)
-        })
+       this.props.setRandomIndex({
+           randomIndex: Math.floor(Math.random() * 9)
+       })
     };
 
     incCounter = () => {
         this.audioRef.current.currentTime = 0;
         this.audioRef.current.play();
-        this.setState({count: this.state.count + 1})
+        this.props.incCounter({count: this.state.count + 1})
     };
 
     items = [0, 1, 2, 3, 4, 5, 6, 7, 8];
@@ -41,15 +36,32 @@ class App extends React.Component {
                 <audio src={sound} ref={this.audioRef}> </audio>
                 {this.items.map(i => <Circle
                     key={i}
-                    randomIndex={this.state.randomIndex}
+                    randomIndex={this.props.randomIndex}
                     index={i}
                     onClickHandler={this.incCounter}/>)}
 
-                <div className='counter'> {this.state.count} </div>
+                <div className='counter'> {this.props.count} </div>
             </div>
 
         );
     }
 }
 
-export default App;
+let mapStateToProps = (state)=> {
+    return {
+        randomIndex: state.randomIndex,
+        count: state.count,
+    }
+};
+let mapDispatchToProps =(dispatch)=> {
+    return {
+        setRandomIndex: (index)=> {
+            dispatch(setRandomIndexAC(index))
+        },
+
+    }
+};
+
+export const AppHOC = connect(mapStateToProps, mapDispatchToProps)(App);
+
+export default AppHOC;
