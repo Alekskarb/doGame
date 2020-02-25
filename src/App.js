@@ -16,15 +16,15 @@ class App extends React.Component {
     };
 
     setRandomIndex = () => {
-       this.props.setRandomIndex({
-           randomIndex: Math.floor(Math.random() * 9)
-       })
+       this.props.setRandomIndex(
+           // {randomIndex: Math.floor(Math.random() * 9)}
+           )
     };
 
     incCounter = () => {
         this.audioRef.current.currentTime = 0;
         this.audioRef.current.play();
-        this.props.incCounter({count: this.props.count + 1})
+        this.props.incCounter(this.props.count + 1)
     };
 
     items = [0, 1, 2, 3, 4, 5, 6, 7, 8];

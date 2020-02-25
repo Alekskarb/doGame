@@ -12,14 +12,18 @@ const reducer = (state = iniState, action) => {
     switch (action.type) {
         case SET_RANDOM_INDEX:
             return {
-                ...state, randomIndex: action.index
+                ...state, randomIndex: Math.floor(Math.random() * 9)
+            };
+            case SET_COUNT:
+            return {
+                ...state, count: action.number
             };
         default:
             return state
     }
 };
 
-export const setRandomIndexAC = (index) => ({type: SET_RANDOM_INDEX, index});
+export const setRandomIndexAC = () => ({type: SET_RANDOM_INDEX});
 export const incCounterAC = (number) => ({type: SET_COUNT, number});
 
 export default reducer;
