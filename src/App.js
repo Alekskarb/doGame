@@ -16,9 +16,8 @@ class App extends React.Component {
     };
 
     setRandomIndex = () => {
-       this.props.setRandomIndex(
-           // {randomIndex: Math.floor(Math.random() * 9)}
-           )
+        this.props.setRandomIndex(
+        )
     };
 
     incCounter = () => {
@@ -47,18 +46,18 @@ class App extends React.Component {
     }
 }
 
-let mapStateToProps = (state)=> {
+let mapStateToProps = (state) => {
     return {
         randomIndex: state.count.randomIndex,
         count: state.count.count,
     }
 };
-let mapDispatchToProps =(dispatch)=> {
+let mapDispatchToProps = (dispatch) => {
     return {
-        setRandomIndex: (index)=> {
+        setRandomIndex: (index) => {
             dispatch(setRandomIndexAC(index))
         },
-        incCounter: (num)=> {
+        incCounter: (num) => {
             dispatch(incCounterAC(num))
         }
     }
