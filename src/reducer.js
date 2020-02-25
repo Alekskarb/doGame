@@ -1,6 +1,11 @@
 import React from 'react';
-import {combineReducers} from "redux";
 
-const reducer = combineReducers()
+let iniState = {
+    count: 0
+};
+
+const reducer = (state = iniState, action) => {
+    return state
+};
 
 export default reducer;
