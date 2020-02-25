@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Circle from './Circle';
 import sound from './dog.mp3'
-import {setRandomIndexAC} from "./reducer";
+import {incCounterAC, setRandomIndexAC} from "./reducer";
 import {connect} from "react-redux";
 
 class App extends React.Component {
@@ -24,7 +24,7 @@ class App extends React.Component {
     incCounter = () => {
         this.audioRef.current.currentTime = 0;
         this.audioRef.current.play();
-        this.props.incCounter({count: this.state.count + 1})
+        this.props.incCounter({count: this.props.count + 1})
     };
 
     items = [0, 1, 2, 3, 4, 5, 6, 7, 8];
@@ -49,8 +49,8 @@ class App extends React.Component {
 
 let mapStateToProps = (state)=> {
     return {
-        randomIndex: state.randomIndex,
-        count: state.count,
+        randomIndex: state.count.randomIndex,
+        count: state.count.count,
     }
 };
 let mapDispatchToProps =(dispatch)=> {
@@ -58,7 +58,9 @@ let mapDispatchToProps =(dispatch)=> {
         setRandomIndex: (index)=> {
             dispatch(setRandomIndexAC(index))
         },
-
+        incCounter: (num)=> {
+            dispatch(incCounterAC(num))
+        }
     }
 };
 

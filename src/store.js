@@ -3,7 +3,8 @@ import {combineReducers, createStore} from "redux";
 import reducer from "./reducer";
 
 const rootReducer = combineReducers({
-count: reducer
+    count: reducer
 });
 
-export const store = createStore(rootReducer);
+const store = createStore(rootReducer);
+export default store;
