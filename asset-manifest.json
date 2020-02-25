@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/doGame/static/css/main.58e59ba5.chunk.css",
-    "main.js": "/doGame/static/js/main.ae28af66.chunk.js",
-    "main.js.map": "/doGame/static/js/main.ae28af66.chunk.js.map",
+    "main.js": "/doGame/static/js/main.f34c18cb.chunk.js",
+    "main.js.map": "/doGame/static/js/main.f34c18cb.chunk.js.map",
     "runtime-main.js": "/doGame/static/js/runtime-main.520e1f3c.js",
     "runtime-main.js.map": "/doGame/static/js/runtime-main.520e1f3c.js.map",
-    "static/js/2.3ccefaab.chunk.js": "/doGame/static/js/2.3ccefaab.chunk.js",
-    "static/js/2.3ccefaab.chunk.js.map": "/doGame/static/js/2.3ccefaab.chunk.js.map",
+    "static/js/2.a6733265.chunk.js": "/doGame/static/js/2.a6733265.chunk.js",
+    "static/js/2.a6733265.chunk.js.map": "/doGame/static/js/2.a6733265.chunk.js.map",
     "index.html": "/doGame/index.html",
-    "precache-manifest.775e7110cb0c2493fddddb4a855ce013.js": "/doGame/precache-manifest.775e7110cb0c2493fddddb4a855ce013.js",
+    "precache-manifest.77cd662197f6e7c9806952e4f7885f43.js": "/doGame/precache-manifest.77cd662197f6e7c9806952e4f7885f43.js",
     "service-worker.js": "/doGame/service-worker.js",
     "static/css/main.58e59ba5.chunk.css.map": "/doGame/static/css/main.58e59ba5.chunk.css.map",
-    "static/js/2.3ccefaab.chunk.js.LICENSE.txt": "/doGame/static/js/2.3ccefaab.chunk.js.LICENSE.txt",
+    "static/js/2.a6733265.chunk.js.LICENSE.txt": "/doGame/static/js/2.a6733265.chunk.js.LICENSE.txt",
     "static/media/dog.mp3": "/doGame/static/media/dog.75fa68d4.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.520e1f3c.js",
-    "static/js/2.3ccefaab.chunk.js",
+    "static/js/2.a6733265.chunk.js",
     "static/css/main.58e59ba5.chunk.css",
-    "static/js/main.ae28af66.chunk.js"
+    "static/js/main.f34c18cb.chunk.js"
   ]
 }

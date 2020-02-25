@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dc6323f18a06ae9a67de61f59fd055a2",
+    "revision": "1616e08a46cf8ed620deda5603c57a6c",
     "url": "/doGame/index.html"
   },
   {
-    "revision": "6b6fc7c65b497b90cdeb",
+    "revision": "e0e3c7fc0b50b78f24f0",
     "url": "/doGame/static/css/main.58e59ba5.chunk.css"
   },
   {
-    "revision": "394f04b087713684e833",
-    "url": "/doGame/static/js/2.3ccefaab.chunk.js"
+    "revision": "a2faf126ff2417119c90",
+    "url": "/doGame/static/js/2.a6733265.chunk.js"
   },
   {
-    "revision": "99bd0487192ec9e7d9ee8fbbd91ee444",
-    "url": "/doGame/static/js/2.3ccefaab.chunk.js.LICENSE.txt"
+    "revision": "928d7b5eb39d16fe9a880722c974b51e",
+    "url": "/doGame/static/js/2.a6733265.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6b6fc7c65b497b90cdeb",
-    "url": "/doGame/static/js/main.ae28af66.chunk.js"
+    "revision": "e0e3c7fc0b50b78f24f0",
+    "url": "/doGame/static/js/main.f34c18cb.chunk.js"
   },
   {
     "revision": "14f121c23e187f475e7f",
